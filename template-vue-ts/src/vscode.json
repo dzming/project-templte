@@ -1,0 +1,30 @@
+{
+  "Print to console": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "  <div :class='$style.header_wrap'>\n</div>",
+      "</template>\n",
+
+      "<script lang='ts'>",
+      "import { Component, Vue, Watch } from 'vue-property-decorator';\n",
+
+      "@Component",
+      "export default class Iheader extends Vue {",
+      "  private index = 0;\n",
+
+      "  private created() {}\n",
+
+      "  private mounted() {}\n",
+      "}",
+      "</script>\n",
+
+      "<style module>",
+      ".header_wrap {",
+      "}\n",
+      "</style>\n",
+      "$2"
+    ],
+    "description": "ts vue"
+  }
+}

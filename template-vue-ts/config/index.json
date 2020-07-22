@@ -1,0 +1,12 @@
+{
+  "baseUrl": "/",
+  "prerender": {
+    "routeList": ["/"]
+  },
+  "optimizes": {
+    "openHappyPack": true,
+    "openAnalyzer": false,
+    "openPrerender": false,
+    "openImgMini": false
+  }
+}

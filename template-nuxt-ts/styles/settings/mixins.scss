@@ -1,0 +1,42 @@
+@mixin border-1px($color: #e4e7f0, $poses...) {
+  @each $pos in $poses {
+    border-#{$pos}: 1px solid $color;
+  }
+}
+
+@mixin display-l-b($align: middle) {
+  display: inline-block;
+  vertical-align: $align;
+}
+@mixin display-flex($direction: initial) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin font-small($fontWeight: $--font-weight-medium-default) {
+  font-size: $--font-size-small;
+  line-height: $--font-line-height-small;
+  font-weight: $fontWeight;
+}
+@mixin font-base($fontWeight: $--font-weight-medium-default) {
+  font-size: $--font-size-base;
+  line-height: $--font-line-height-base;
+  font-weight: $fontWeight;
+}
+@mixin font-medium($fontWeight: $--font-weight-medium-default) {
+  font-size: $--font-size-medium;
+  line-height: $--font-line-height-medium;
+  font-weight: $fontWeight;
+}
+
+@mixin font-large($fontWeight: $--font-weight-medium-default) {
+  font-size: $--font-size-large;
+  line-height: $--font-line-height-large;
+  font-weight: $fontWeight;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

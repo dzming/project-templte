@@ -1,0 +1,77 @@
+// 全局工具类名
+.common-fl {
+  float: left;
+}
+
+.common-fr {
+  float: right;
+}
+
+.common-text-left {
+  text-align: left;
+}
+
+.common-text-right {
+  text-align: right;
+}
+.common-text-right {
+  text-align: right;
+}
+
+.common-text-center {
+  text-align: center;
+}
+
+.common-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.common-position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.common-layout-content {
+  width: $--layout-content-width;
+  margin: 0 auto;
+  border-radius: $--border-radius-base;
+}
+
+.common-el-table-th-bg {
+  th {
+    background: $--color-thead-bg !important;
+  }
+}
+
+.common-color-danger {
+  color: $--color-danger;
+}
+.common-color-success {
+  color: $--color-success;
+}
+.common-color-primary {
+  color: $--color-danger;
+}
+.common-font-color-base {
+  color: $--font-color-base;
+}
+.common-font-color-secondary {
+  color: $--font-color-secondary;
+}
+
+.common-font-weight-medium {
+  font-weight: $--font-weight-medium-default;
+}

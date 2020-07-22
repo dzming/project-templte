@@ -1,0 +1,66 @@
+html,
+body {
+  line-height: 1.15;
+  height: 100%;
+}
+
+html {
+  // font-family: 'open sans', 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', "sans-serif";
+  font-family: "-apple-system", "PingFang SC", "Hiragino Sans GB", "Source Han Sans", "Helvetica Neue",  "Helvetica", "Microsoft YaHei", "Arial";
+  // font-family: tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; // scroll-behavior: smooth;
+}
+
+body {
+  font-size: $--font-size-base;
+  color: $--font-color-base;
+  line-height: $--font-line-height-base;
+  min-width: 1220px;
+  word-break: break-all;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $--font-color-base;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a[title="站长统计"] {
+  display: none;
+}
+
+img[lazy="loading"],
+img[lazy="error"] {
+  background-image: linear-gradient(to bottom, #f5f8fb, #f5f8fb);
+  background-size: cover;
+}
+
+img[lazy="loaded"] {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

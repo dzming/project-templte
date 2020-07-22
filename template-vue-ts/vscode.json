@@ -1,0 +1,48 @@
+{
+  "TypeScript Vue Template": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "  <div :class='$$style.page_wrap'></div>",
+      "</template>\n",
+
+      "<script lang='ts'>",
+      "import { Component, Vue, Watch } from 'vue-property-decorator';\n",
+
+      "@Component({",
+      "  name: 'page',",
+      "  components: {}",
+      "})",
+      "export default class Ipage extends Vue {",
+
+      "/* Data */",
+      "  private index:undefined = undefined;\n",
+
+      "/* Computed */",
+      "  get myIndex() {return ''}\n",
+
+      "/* Hook */",
+      "  private created() {}",
+      "  private mounted() {}\n",
+
+      "/* Function */",
+      "  private myFun() {}\n",
+
+      "}",
+      "</script>\n",
+
+      "<style lang='scss' module>",
+      ".page_wrap {",
+      "  z-index: inherit;",
+      "  position: static;",
+      "  width: auto;",
+      "  height: auto;",
+      "  font-size: inherit;",
+      "  color: inherit;",
+      "}",
+      "</style>\n",
+      "$2"
+    ],
+    "description": "TypeScript Vue Template"
+  }
+}

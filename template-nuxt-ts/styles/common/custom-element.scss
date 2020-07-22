@@ -1,0 +1,210 @@
+//  dialog
+.el-dialog__border .el-dialog {
+  border-top: 4px solid $--color-primary;
+}
+.el-dialog {
+  border-radius: $--border-radius-base !important;
+  .el-dialog__header {
+    border-top-left-radius: $--border-radius-base !important;
+    border-top-right-radius: $--border-radius-base !important;
+  }
+  .el-dialog__body {
+    // padding-top: 17px;
+    padding: 30px;
+  }
+  .el-button.el-button--default {
+    color: $--font-color-base;
+  }
+}
+.el-dialog__title {
+  font-weight: $--font-weight-medium;
+}
+
+.el-table {
+  th,
+  td {
+    color: $--font-color-base !important;
+  }
+  &.custom-table {
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+
+    th {
+      padding: 8px 0;
+    }
+
+    thead {
+      font-weight: normal;
+      color: $--font-color-base;
+
+      tr {
+        background: $--bg-color-base;
+
+        th {
+          background: $--bg-color-base;
+        }
+      }
+    }
+    &.el-table--border th,
+    &.el-table--border td {
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+// .el-table.custom-table {
+//   border-right: 0;
+//   border-left: 0;
+//   border-top: 0;
+
+//   th {
+//     padding: 8px 0;
+//   }
+
+//   thead {
+//     font-weight: normal;
+//     color: $--font-color-base;
+
+//     tr {
+//       background: $--bg-color-base;
+
+//       th {
+//         background: $--bg-color-base;
+//       }
+//     }
+//   }
+
+//   &.el-table--border th,
+//   &.el-table--border td {
+//     &:last-child {
+//       border-right: 0;
+//     }
+//   }
+// }
+
+.tiny-btn-primary.is-plain {
+  padding: 4px 12px !important;
+  border: 1px solid #7b87fc;
+  background: #fff;
+  color: $--color-primary;
+  border-radius: $--border-radius-base;
+
+  &:hover {
+    color: #fff;
+    border-color: $--color-primary;
+    background: rgba(123, 135, 252, 1);
+  }
+}
+
+.el-table--group::after,
+.el-table--border::after {
+  display: none;
+}
+
+.el-table--border th,
+.el-table--border td {
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.el-table--group::after,
+.el-table--border::after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  display: none;
+}
+
+.el-table--group::after,
+.el-table--border::after,
+.el-table::before {
+  display: none;
+}
+
+.el-notification .el-icon-info {
+  color: $--color-primary !important;
+}
+
+.el-badge .el-badge__content {
+  background: #ff6066;
+  height: auto;
+}
+
+.el-rate__icon {
+  margin-right: 4px;
+}
+
+.el-form-item .el-form-item__label {
+  color: $--font-color-secondary;
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #dcdfe6 !important;
+}
+.el-input__inner {
+  &::placeholder {
+    color: $--font-color-secondary !important;
+  }
+}
+
+.el-dropdown-menu {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.el-pagination.transparent {
+  .el-pager li,
+  .btn-prev,
+  .btn-next,
+  .el-input .el-input__inner {
+    background: transparent;
+  }
+}
+
+.el-table.common-el-table-scale-hover {
+  overflow: visible;
+  td {
+    background-color: transparent!important;
+  }
+  .el-table__body-wrapper {
+    overflow: visible!important;
+  }
+  &.el-table--enable-row-hover .el-table__body tr:hover {
+    border-radius: $--border-radius-base;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    border: 0;
+    transform: scale(1.025);
+    td {
+      background-color: $--color-white;
+      &:first-child {
+        border-top-left-radius: $--border-radius-base;
+        border-bottom-left-radius: $--border-radius-base;
+      }
+      &:last-child {
+        border-top-right-radius: $--border-radius-base;
+        border-bottom-right-radius: $--border-radius-base;
+      }
+    }
+  }
+}
+
+.el-button.is-round.el-button--large.back-btn {
+  display: block;
+  padding: 14px 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 默认button 但使用的颜色是primary色
+.el-button.el-button--default.primary-outline-btn {
+  color: $--color-primary;
+  border: 1px solid $--color-primary;
+}

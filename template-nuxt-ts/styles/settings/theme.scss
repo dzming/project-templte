@@ -1,0 +1,94 @@
+/* Variables */
+
+// colors in element ui 
+$--color-primary: #5A6AFC !default;
+$--color-success: #04B97B !default;
+$--color-warning: #FFB300 !default;
+$--color-danger: #EB3A3A !default;
+$--color-info: #909399 !default;
+$--color-white: #FFF !default;
+$--color-black: #000 !default;
+$--color-orange: #F76B1C !default;
+$--color-text-regular: #444 !default;
+$--color-text-secondary: #878B9F !default;
+$--color-text-placeholder: $--color-text-secondary !default;
+
+
+
+// colors with background
+$--color-success-withbg:#7ED321 !default;
+$--color-success-bg:rgba(82,144,15,1) !default;
+$--color-danger-bg:rgba(192,52,57,1) !default;
+$--color-gray-bg: #f5f8fb !default;
+$--color-thead-bg: #e9edf5;
+
+
+// font
+
+$--font-color-base: $--color-text-regular;
+$--font-color-secondary: $--color-text-secondary;
+
+
+$--font-size-mini: 10px;
+$--font-size-small: 12px;
+$--font-size-base: 14px;
+$--font-size-medium: 16px;
+$--font-size-large: 18px;
+$--font-size-extralarge: 20px;
+
+$--font-weight-regular: 400;
+$--font-weight-medium-default: 500;
+$--font-weight-medium: 550;
+$--font-weight-semibold: 600;
+$--font-weight-bold: 700;
+$--font-weight-extrabold: 800;
+$--font-weight-heavy:900;
+$--font-weight-extraheavy:900;
+
+// $--font-line-height-mini: 14px;
+// $--font-line-height-small: 18px;
+// $--font-line-height-base: 20px;
+// $--font-line-height-medium: 22px;
+// $--font-line-height-large: 24px;
+$--font-line-height-mini: 12px;
+$--font-line-height-small: 18px;
+$--font-line-height-base: 20px;
+$--font-line-height-medium: 22px;
+$--font-line-height-large: 24px;
+$--font-line-height-extralarge: 28px;
+
+$--global-header-height: 72px;
+$--global-footer-height: 70px;
+
+// layout
+
+$--layout-content-width: 1200px;
+
+
+$--border-radius-base: 4px;
+$--border-radius-small: 2px;
+$--border-radius-none: 0;
+$--border-radius-round: 30px;
+
+// :global {
+//   .sns-icon-share-qq {
+//     color: #4DAFEA;
+//     ;
+//   }
+// }
+
+// :global {
+//   .sns-icon-share-wx {
+//     color: #0AB70E;
+//   }
+// }
+
+// :global {
+//   .sns-icon-share-wb {
+//     color: #D81E06;
+//   }
+// }
+
+$--bg-color-base: rgb(245,248,251);
+$--container-bg-color: rgba(249,250,252,1);
+
