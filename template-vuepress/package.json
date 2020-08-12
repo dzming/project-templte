@@ -2,11 +2,9 @@
   "name": "vuepress-homepage",
   "version": "1.0.0",
   "description": "Generate your homepage with VuePress",
-  "author": "www.weipxiu.com",
-  "repository": "https://github.com/weipxiu",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dev": "vuepress dev docs",
+    "serve": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "license": "MIT",
@@ -14,6 +12,7 @@
     "vuepress": "^0.14.5"
   },
   "dependencies": {
+    "@vuepress/shared-utils": "^1.5.3",
     "markdown-it": "^8.4.1",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex": "^2.0.3"

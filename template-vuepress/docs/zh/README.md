@@ -1,27 +1,38 @@
 ---
-layout: 我的
-description: "The biography and information about me."
-avatar: /profile.jpg
-head: "Harry Potter"
-info: "Student at Hogwarts School"
-interests: "Interests: Quidditch and Wizard chess."
-socials:
-  - title: github
-    link: https://github.com/mtobeiyf
-  - title: linkedin
-    link: https://www.linkedin.com
-  - title: instagram
-    link: https://www.instagram.com
-  - title: email
-    link: "mailto:harry[at]gmail.com"
-actions:
-  - text: Projects
-    link: /projects/
-  - text: Blog
-    link: https://github.com/mtobeiyf
-  - text: CV
-    link: /article/
-footer: Powered by VuePress
+home: true
+heroImage: /hero.png
+actionText: 快速上手 →
+actionLink: /zh/guide/
+features:
+  - title: fincy 开放平台官网
+    details: 以 开放产品 为中心的项目结构。
+  - title: fincy 商家后台管理
+    details: 商家管理后台，管理商户的订单以及功能操作。
+  - title: 在线 DEMO
+    details: http://demo.fincy.com（请复制地址黏贴到 fincy APP 内打开）。
+footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-I attended [Hogwarts School of Witchcraft and Wizardry](https://en.wikipedia.org/wiki/Hogwarts) to study witchcraft, supervised by **Dumbledore** and other professors. I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. :dizzy:
+<div style="text-align: center">
+  <Bit/>
+</div>
+
+### 像数 1, 2, 3 一样容易
+
+```bash
+# 安装
+yarn global add vuepress # 或者：npm install -g vuepress
+
+# 新建一个 markdown 文件
+echo '# Hello VuePress!' > README.md
+
+# 开始写作
+vuepress dev .
+
+# 构建静态文件
+vuepress build .
+```
+
+::: warning 注意
+请确保你的 Node.js 版本 >= 8.6。
+:::

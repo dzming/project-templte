@@ -1,26 +1,27 @@
+### 1.Getting started: still have to learn layout
 
+- Corresponding SLAPP library scheme: m2
 
-### 1.入门：还是要学布局
-- 对应 SLAPP 库方案：m2
+> Corresponding SLAPP library scheme: m2
 
-> 对应 SLAPP 库方案：m2
-
-```js 
+```js
 // ios
 window.webkit.messageHandlers.JSToNative_iOS.postMessage({
-  method: 'updateNickName', // 方法名
-  nickName: 'xxx', // 昵称
-  callback: 'xxx', //成功回调方法名
-  failCallback: 'xxx' // 失败回调方法名
-})
+  method: "updateNickName", // Method name
+  nickName: "xxx", // nickname
+  callback: "xxx", // Success callback method name
+  failCallback: "xxx", // Failure callback method name
+});
 
 // andriod
-window.JSToNative.postMessage(JSON.stringify({
-  method: 'updateNickName', // 方法名
-  nickName: 'xxx', // 昵称
-  callback: 'xxx', //成功回调方法名
-  failCallback: 'xxx' // 失败回调方法名
-}))
+window.JSToNative.postMessage(
+  JSON.stringify({
+    method: "updateNickName", // Method name
+    nickName: "xxx", // nickname
+    callback: "xxx", // Success callback method name
+    failCallback: "xxx", // Failure callback method name
+  }),
+);
 ```
 
 <!-- Now, let's try it :point_right: -->

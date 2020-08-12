@@ -1,27 +1,50 @@
 ---
-layout: Homepage
-description: 'The biography and information about me.'
-avatar: /profile.jpg
-head: 'Harry Potter'
-info: 'Student at Hogwarts School'
-interests: 'Interests: Quidditch and Wizard chess.'
-socials:
-- title: github
-  link: https://github.com/mtobeiyf
-- title: linkedin
-  link: https://www.linkedin.com
-- title: instagram
-  link: https://www.instagram.com
-- title: email
-  link: 'mailto:harry[at]gmail.com'
-actions:
-- text: Projects
-  link: /projects/
-- text: Blog
-  link: https://github.com/mtobeiyf
-- text: CV
-  link: /article/
-footer: Powered by VuePress
+home: true
+heroImage: /hero.png
+actionText: Get Started →
+actionLink: /guide/
+footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-I attended [Hogwarts School of Witchcraft and Wizardry](https://en.wikipedia.org/wiki/Hogwarts) to study witchcraft, supervised by **Dumbledore** and other professors. I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. :dizzy:
+<div class="features">
+  <a class="feature" href="https://its@fincy.com/open">
+    <h2>fincy open platform official website</h2>
+    <p>Project structure centered on open products.</p>
+  </a>
+  <a class="feature">
+    <h2>fincy merchant background management</h2>
+    <p>Merchant management background, manage merchant's orders and functional operations.</p>
+  </a>
+  <a class="feature">
+    <h2>Online demo</h2>
+    <p>http://demo.fincy.com (please copy the address and paste it into the fincy APP to open).</p>
+  </a>
+</div>
+
+<!-- 主页广告位 -->
+<div style="text-align: center" class="advertising">
+  <Bit/>
+</div>
+
+### As Easy as 1, 2, 3
+
+```bash
+# Scaffold VuePress site
+yarn create vuepress [directoryName]
+# OR npx create-vuepress [directoryName]
+
+# Navigate to your new VuePress directory
+cd [directoryName]
+
+# Start local dev server
+yarn dev
+# OR npm run dev
+
+# Build static files
+yarn build
+# OR npm run build
+```
+
+::: warning COMPATIBILITY NOTE
+VuePress requires Node.js >= 8.6.
+:::
