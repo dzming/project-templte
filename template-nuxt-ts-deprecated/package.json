@@ -1,0 +1,50 @@
+{
+  "name": "template-nuxt-ts",
+  "version": "1.0.0",
+  "description": "A template for nuxt with typescript.",
+  "author": "LXTX FE",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development VUE_APP_STAGE=dev nuxt",
+    "build": "cross-env NODE_ENV=production VUE_APP_STAGE=prod nuxt build",
+    "release": "cross-env NODE_ENV=production VUE_APP_STAGE=release nuxt build",
+    "build:dev": "cross-env NODE_ENV=production VUE_APP_STAGE=dev nuxt build",
+    "build:pre": "cross-env NODE_ENV=production VUE_APP_STAGE=pre nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@nuxtjs/axios": "^5.8.0",
+    "@types/js-cookie": "^2.2.4",
+    "crypto-js": "^3.1.9-1",
+    "dayjs": "^1.8.17",
+    "element-theme-chalk": "^2.13.0",
+    "element-ui": "^2.13.0",
+    "event-source-polyfill": "^1.0.11",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.0.0",
+    "nuxt-i18n": "^6.4.1",
+    "nuxt-property-decorator": "^2.5.0",
+    "util": "^0.12.1",
+    "v-click-outside-x": "^4.0.19",
+    "vuex-module-decorators": "^0.11.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.3.10",
+    "@nuxtjs/style-resources": "0.1.2",
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.7.2",
+    "eslint-loader": "^3.0.3",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "terser-webpack-plugin": "^2.3.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3333"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "Vue Module Template": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      "  <div :class='$$style.page_wrap'></div>",
+      "</template>\n",
+
+      "<script>",
+      "export default {",
+      "  name: 'page',",
+      "  components: {},",
+      "  props: {},",
+      "  data() {",
+      "    return {};",
+      "  },",
+      "  computed: {},",
+      "  watch: {},",
+      "  created() {},",
+      "  mounted() {},",
+      "  methods: {}",
+      "};",
+      "</script>\n",
+
+      "<style lang='scss' module>",
+      ".page_wrap {",
+      "}",
+      "</style>\n",
+      "$2"
+    ],
+    "description": "Vue Template"
+  }
+}

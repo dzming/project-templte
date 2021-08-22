@@ -1,0 +1,141 @@
+// 全局工具类名
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.text-right {
+  text-align: right
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.postion-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.text_decoration {
+  text-decoration: underline;
+}
+
+.text_decoration_none {
+  text-decoration: none;
+  cursor: default;
+}
+
+.text_decoration_underline {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.font_weight_bold {
+  font-weight: bold;
+}
+
+.font_weight_semibold {
+  font-weight: $--font-weight-semibold;
+}
+.font_weight_normal {
+  font-weight: $--font-weight-normal;
+}
+.font_weight_medium {
+  font-weight: $--font-weight-medium;
+}
+.font_weight_light {
+  font-weight: $--font-weight-light;
+}
+
+.color_primary {
+  color: $--color-primary;
+}
+
+.color_danger {
+  color: $--color-danger;
+}
+
+.color_black {
+  color: $--color-black;
+}
+
+.list_pagination {
+  padding: 20px 0;
+}
+
+.search_container {
+  padding: 30px;
+  border-bottom: 1px solid #DDDDDD;
+  .search_item {
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+    @include lb;
+    .search_span {
+      @include lb;
+      color: $--color-black;
+      padding-right: 30px;
+    }
+    .search_input {
+      @include lb;
+      &.input_address {
+        width: 480px;
+      }
+    }
+    .search_input_suffix {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// 一般用于 返回上页
+.el-button.outline_btn {
+  color: $--color-primary;
+  background: $--color-white;
+  border: 1px solid $--color-primary;
+}
+
+// .table_container {
+//   min-height: 300px;
+// }
+.el_tab_border_none {
+  .el-tabs__nav-wrap::after {
+    display: none
+  } 
+}
+
+// ‘没有数据’组件
+.table_status_wrap {
+  position: relative;
+  margin: 10% 0;
+}
