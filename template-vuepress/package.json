@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@vuepress/shared-utils": "^1.5.3",
-    "markdown-it": "^8.4.1",
+    "markdown-it": "^12.3.2",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex": "^2.0.3"
   }
